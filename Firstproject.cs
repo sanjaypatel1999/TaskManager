@@ -64,9 +64,9 @@ class Program
     {
         Task task = new Task();
         Console.Write("Enter task title: ");
-        task.Title = Console.ReadLine();
+        task.Title = Console.ReadLine()!;
         Console.Write("Enter task description: ");
-        task.Description = Console.ReadLine();
+        task.Description = Console.ReadLine()!;
         Console.Write("Enter due date (yyyy-MM-dd): ");
         if (DateTime.TryParse(Console.ReadLine(), out DateTime dueDate))
         {
